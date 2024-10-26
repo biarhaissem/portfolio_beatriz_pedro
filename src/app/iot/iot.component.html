@@ -1,0 +1,152 @@
+<div class="container">
+  <div class="container2 pt-4 pb-4">
+
+  <div class="text-center">
+    <p class="text fs-1 fw-bolder pt-3">PLANTECH</p>
+    <p class="fs-3 fw-normal">IoT Mobile App - Monitor de Umidade</p>
+  <div class="fs-5">
+
+  <div class="row align-items-center">
+    <p class="fs-2 pt-1"></p>
+    <div class="row align-items-center">
+    <!-- Container da Imagem -->
+    <div class="col-md-6 order-md-1 d-flex justify-content-center">
+     <div class="image-container">
+      <img src="assets/images/plantechmobcapa.png" class="img-fluid rounded static-image" alt="cupcake morango"
+      (click)="expandImage('assets/images/plantechmobcapa.png')"> <!-- Clique para expandir a imagem -->
+      </div>
+    </div>
+    <p class="fs-2 pt-1"></p>
+
+    <!-- Container do Texto -->
+    <div class="col-md-6 order-md-2">
+      <div class="p-4 text-start">
+        <div class="fs-5">
+          <p>App mobile IoT para monitoramento remoto da umidade dos vasos de plantas.</p>
+          <p>Desenvolvemos um protótipo IoT utilizando a placa programável Wi-Fi ESP8266, um sensor de umidade e a IDE Arduino para programação com a linguagem C.</p>
+          <p>Através da plataforma ucraniana Blynk IoT, criamos a interface para controle remoto mobile integrado ao protótipo para receber os dados em tempo real.</p>
+          <p>Utilizamos ferramentas modernas para a elaboração e desenvolvimento do projeto.</p>
+          <p>01. Question Zero</p>
+          <p>03. Business Model Canvas</p>
+          <p>04. Design Thinking - Double Diamond</p>
+          <p>05. Stakeholder Map</p>
+          <p>06. Construção do Sistema</p>
+          <p>07. Design, criação e integração do App PLANTECH com a Blynk IoT.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+  <div class="text-center">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-2 fw-bolder pt-3">DETAILS</p>
+  <div class="fs-5">
+  <p class="fs-4 pt-1"></p>
+
+ <!-- CARDÁPIO -->
+ <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
+  <div class="col" *ngFor="let item of cardapioItems">
+    <div class="card c-cardapio">
+      <img
+        [src]="item.image"
+        class="card-img-left cardapio"
+        alt="{{ item.title }}"
+        (click)="expandImage(item.image, item.linkUrl)">
+      <div class="card-body text-center">
+        <p class="card-title">{{ item.title }}</p>
+        <!-- <p class="card-text fs-6">{{ item.description }}</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+    <!-- Botão para abrir o link, se houver um link associado -->
+    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+      <button class="btn btn-primary fw-bold" (click)="openExternalLink()">Click Me</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="container2 pt-4 pb-4">
+
+<div class="text-center">
+  <p class="text fs-1 fw-bolder pt-3">Smart Plant</p>
+  <p class="fs-3 fw-normal">IoT Mobile App - Monitoração e Irrigação Remotas</p>
+<div class="fs-5">
+
+<div class="row align-items-center">
+  <p class="fs-2 pt-1"></p>
+  <div class="row align-items-center">
+  <!-- Container da Imagem -->
+  <div class="col-md-6 order-md-1 d-flex justify-content-center">
+   <div class="image-container">
+    <img src="assets/images/smartmobcapa.png" class="img-fluid rounded static-image" alt="cupcake morango"
+    (click)="expandImage('assets/images/smartmobcapa.png')"> <!-- Clique para expandir a imagem -->
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+  <!-- Container do Texto -->
+  <div class="col-md-6 order-md-2">
+    <div class="p-4 text-start">
+      <div class="fs-5">
+        <p>App mobile IoT para irrigação remota sustentável e controle de umidade da terra de vasos de plantas.</p>
+        <p>Através das aulas de Responsabilidade Social e Sustentabilidade, estudamos os 17 Objetivos de Desenvolvimento Sustentável (ODS), da Agenda 2030, e focamos no ODS 9: Indústria, Inovação e Infraestrutura, para elaborarmos nosso projeto.</p>
+        <p>Pudemos utilizar alguns componentes do PLANTECH para integrar ao sistema remoto de irrigação sustentável.</p>
+        <p>Criamos outro aplicativo mobile pela Blynk IoT.</p>
+        <p>01. Estudo aprofundado dos 17 ODS</p>
+        <p>02. Cronograma</p>
+        <p>03. Análise SWOT</p>
+        <p>04. Método 5W2H</p>
+        <p>05. Arquitetura do Sistema</p>
+        <p>06. Design, criação e integração do App Smart Plant com a Blynk IoT.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="fs-2 pt-1"></p>
+
+<div class="text-center">
+  <p class="fs-4 pt-4"></p>
+  <p class="text fs-2 fw-bolder pt-3">DETAILS</p>
+<div class="fs-5">
+<p class="fs-4 pt-1"></p>
+
+<!-- CARDÁPIO -->
+<div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
+<div class="col" *ngFor="let item of batalhaItems">
+  <div class="card c-batalha">
+    <img
+      [src]="item.image"
+      class="card-img-left batalha"
+      alt="{{ item.title }}"
+      (click)="expandImage(item.image, item.linkUrl)">
+    <div class="card-body text-center">
+      <p class="card-title">{{ item.title }}</p>
+      <!-- <p class="card-text fs-6">{{ item.description }}</p> -->
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+<div class="modal-content" (click)="$event.stopPropagation()">
+  <span class="close-btn" (click)="closeModal()">&times;</span>
+  <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+  <!-- Botão para abrir o link, se houver um link associado -->
+  <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+    <button class="btn btn-primary fw-bold" (click)="openExternalLink()">Click Me</button>
+  </div>
+</div>
+</div>
+</div>
+

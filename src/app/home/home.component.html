@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOME | Beatriz Pedro</title>
+
+    <meta name="description" content="Trabalho da matéria de Dev Web da Faculdade Unimetrocamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <div class="container">
+      <p class="fs-4 pt-1"></p>
+      <p class="fs-4 pt-1"></p>
+
+      <!-- Logotipo  -->
+      <div class="logotipo-container">
+        <div class="text-center">
+          <span class="text-center fs-1 fw-bold">BEATRIZ PEDRO<p class="text-center fw-normal fs-2">Developer & Designer<p class="text-center fs-1">PORTFOLIO</p></span>
+
+    <!-- Imagem estática maior -->
+    <div class="text-center">
+      <img src="assets/images/layout.png" alt="Imagem Estática" class="img-fluid mx-auto mt-1"
+      (click)="openModal('assets/images/layout.png')"
+      style="cursor: pointer;">
+    </div>
+
+      <!-- Modal para exibir a imagem ampliada -->
+      <div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+        <div class="modal-content" (click)="$event.stopPropagation()"> <!-- Para evitar fechar o modal ao clicar dentro dele -->
+          <span class="close-btn" (click)="closeModal()">&times;</span>
+          <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+        </div>
+      </div>
+      <div *ngIf="currentImage" class="modal">
+        <div class="modal-content">
+          <span class="close" (click)="closeModal()">&times;</span>
+          <img [src]="currentImage" alt="Imagem Expandida" class="img-fluid">
+        </div>
+      </div>
+    <!-- Galeria -->
+
+    <!-- Entre em contato -->
+    <p class="fs-2 fw-bold text-center pt-5">Let´s keep in touch!</p>
+    <p class="fs-4 pt-4"></p>
+    <div class="row row-cols-4 row-cols-md-3 g-6 text-center">
+      <div class="col">
+      <div class="card sociais">
+          <img src="assets/images/logonovo2.png" class="card-img-top" alt="biatech logo" />
+          <div class="card-body">
+            <p class="fw-normal fw-bold fs-3">Networking</p>
+          </div>
+          <div class="col">
+            <div class="sociais">
+              <a class="link" href="https://www.linkedin.com/in/beatriz-pedro-167695238" target="_blank"><i
+                class="fab fa-linkedin fw-bold fs-1"></i></a>
+              <p class="fs-4 pt-2"></p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card sociais">
+            <img src="assets/images/logonovo2.png" class="card-img-top" alt="biatech logo" />
+            <div class="card-body">
+                <p class="fw-normal fw-bold fs-3">Projects</p>
+              </div>
+              <div class="col">
+                <div class="sociais">
+                  <a class="link" href="https://github.com/biarhaissem" target="_blank"><i
+                    class="fab fa-github fw-bold fs-1"></i></a>
+                  <p class="fs-4 pt-2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="col">
+        <div class="card sociais">
+            <img src="assets/images/logonovo2.png" class="card-img-top" alt="biatech logo" />
+            <div class="card-body">
+                <p class="fw-normal fw-bold fs-3">Music</p>
+            </div>
+            <div class="col">
+              <div class="sociais">
+                <a class="link" href="https://biarhäissem.hearnow.com" target="_blank"><i
+                  class="fab fa-spotify fw-bold fs-1"></i></a>
+                <p class="fs-4 pt-2"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+

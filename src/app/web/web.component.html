@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="container2 pt-4 pb-4">
+
+  <div class="text-center">
+    <p class="text fs-1 fw-bolder pt-3">CupCakePop</p>
+    <p class="fs-3 fw-normal">Website Project</p>
+  <div class="fs-5">
+
+  <div class="row align-items-center">
+    <p class="fs-2 pt-1"></p>
+    <div class="row align-items-center">
+    <!-- Container da Imagem -->
+    <div class="col-md-6 order-md-1 d-flex justify-content-center">
+     <div class="image-container">
+      <img src="assets/images/cup4fotos.png" class="img-fluid rounded static-image" alt="cupcake morango"
+      (click)="expandImage('assets/images/cup4fotos.png')"> <!-- Clique para expandir a imagem -->
+      </div>
+    </div>
+    <p class="fs-2 pt-1"></p>
+
+    <!-- Container do Texto -->
+    <div class="col-md-6 order-md-2">
+      <div class="p-4 text-start">
+        <div class="fs-5">
+          <p>Site para venda de cupcakes feito em várias etapas.</p>
+          <p>01. UX Research e Benchmarking</p>
+          <p>02. Wireframe</p>
+          <p>03. Site Wix</p>
+          <p>04. Site com Angular Cli e Typescript</p>
+          <p>05. Mesmo site, com Angular Cli e Typescript no Front-end e, no Back-end, Laravel com PHP</p>
+          <p>Este foi meu primeiro projeto na faculdade. Desafiador e complexo.</p>
+          <p>Cada uma das etapas foi realizada com pesquisas e testes abrangentes e detalhados.</p>
+          <p>O estudo das ferramentas, plataformas e linguagens de programação utilizadas no projeto é contínuo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+  <div class="text-center">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-2 fw-bolder pt-3">DETAILS</p>
+  <div class="fs-5">
+  <p class="fs-4 pt-1"></p>
+
+ <!-- CARDÁPIO -->
+ <div class="row row-cols-2 row-cols-md-3 g-4 pt-4">
+  <div class="col" *ngFor="let item of cardapioItems">
+    <div class="card c-cardapio">
+      <img
+        [src]="item.image"
+        class="card-img-left cardapio"
+        alt="{{ item.title }}"
+        (click)="expandImage(item.image, item.linkUrl)">
+      <div class="card-body text-center">
+        <p class="card-title">{{ item.title }}</p>
+        <!-- <p class="card-text fs-6">{{ item.description }}</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+    <!-- Botão para abrir o link, se houver um link associado -->
+    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+      <button class="btn btn-primary fw-bold" (click)="openExternalLink()">Click Me</button>
+    </div>
+  </div>
+  </div>
+</div>

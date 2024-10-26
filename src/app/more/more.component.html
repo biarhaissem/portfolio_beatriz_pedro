@@ -1,0 +1,69 @@
+<div class="container">
+
+  <div class="container2 pt-4 pb-4">
+
+    <div class="text-center">
+      <p class="text fs-1 fw-bolder pt-3">More About Learning...</p>
+    <div class="fs-5">
+
+    <div class="row align-items-center">
+      <p class="fs-4 pt-1"></p>
+      <p class="fs-4 pt-1"></p>
+
+      <!-- Container do Texto -->
+
+        <div class="p-4 text-center">
+          <div class="fs-2">
+            <p>Aprender é o melhor presente da vida.</p>
+            <p>Estou sempre buscando me aprimorar a cada dia.</p>
+            <p>Este portfólio acompanhará as minhas evoluções.</p>
+            <p>Agradeço imensamente pela sua atenção.</p>
+            <p>Vamos trabalhar juntos?</p>
+            <p class="fs-4 pt-1"></p>
+            <p class="fs-4 pt-1"></p>
+            <p class="fs-4 pt-1"></p>
+            <div class="fs-1 text-center fw-bold">Muito Obrigada!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="fs-4 pt-1"></p>
+    <p class="fs-4 pt-1"></p>
+    <p class="fs-4 pt-1"></p>
+
+    <div class="text-center">
+      <p class="fs-4 pt-4"></p>
+      <p class="text fs-2 fw-bolder pt-3">FILES & FOLDERS</p>
+    <div class="fs-5">
+    <p class="fs-4 pt-1"></p>
+
+  <!-- CARDÁPIO -->
+ <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
+  <div class="col" *ngFor="let item of cardapioItems">
+    <div class="card c-cardapio">
+      <img
+        [src]="item.image"
+        class="card-img-left cardapio"
+        alt="{{ item.title }}"
+        (click)="expandImage(item.image, item.linkUrl)">
+      <div class="card-body text-center">
+        <p class="card-title">{{ item.title }}</p>
+        <!-- <p class="card-text fs-6">{{ item.description }}</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+    <!-- Botão para abrir o link, se houver um link associado -->
+    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+      <button class="btn btn-primary fw-bold" (click)="openExternalLink()">Click Me</button>
+    </div>
+  </div>
+  </div>
+</div>
+
