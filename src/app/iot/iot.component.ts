@@ -11,12 +11,12 @@ export class IotComponent implements OnInit {
     {
       title: 'Question Zero',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
-      image: 'assets/images/question.png',
+      image: 'assets/images/questionzero.png',
     },
     {
       title: 'Business Model Canvas',
       // description: 'Benchmarking, HTML5, Ferramentas NoCode',
-      image: 'assets/images/canvasbusiness.png',
+      image: 'assets/images/canvas.png',
     },
     {
       title: 'Stakeholder Map',
@@ -26,17 +26,17 @@ export class IotComponent implements OnInit {
     {
       title: 'Design Thinking',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/double.png',
+      image: 'assets/images/doublepc.png',
     },
     {
       title: 'Arquitetura',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/construção.png',
+      image: 'assets/images/arqplant.png',
     },
     {
       title: 'Protótipo PLANTECH',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/platechcompleto.png',
+      image: 'assets/images/plantcomp.png',
       linkUrl: 'https://youtu.be/7sXbEuw9uZA?si=g5UhvabDLUXc7Xes'
     },
     {
@@ -57,7 +57,7 @@ export class IotComponent implements OnInit {
     {
       title: 'Painel 17 ODS',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
-      image: 'assets/images/17ods.png',
+      image: 'assets/images/ODS.png',
     },
     {
       title: 'Cronograma',
@@ -77,12 +77,12 @@ export class IotComponent implements OnInit {
     {
       title: 'Arquitetura',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/arquitetura.png',
+      image: 'assets/images/arqsmart.png',
     },
     {
       title: 'Protótipo Smart Plant',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/smartcompleto.png',
+      image: 'assets/images/protcomp.png',
     },
     {
       title: 'App Smart Plant',
@@ -91,7 +91,7 @@ export class IotComponent implements OnInit {
       linkUrl: 'https://www.youtube.com/shorts/n9omp3_MxsQ'
     },
     {
-      title: 'Cliente & Equipe',
+      title: 'Equipe & Cliente',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
       image: 'assets/images/equipesmart.png',
       linkUrl: 'https://youtube.com/shorts/IfF88wXci04?si=d77SgJp6GBJhSadd'

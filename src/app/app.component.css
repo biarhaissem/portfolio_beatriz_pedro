@@ -2,11 +2,12 @@
   color: #212121;
   background-color: none;
   font-size: large;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: left;
 }
 
 .navbar-nav .nav-link.active-link {
-  color: #616161 !important; /* Certifique-se que a cor se aplique */
+  color: #8a8a8a !important; /* Certifique-se que a cor se aplique */
   font-weight: bold; /* Deixe em negrito para destaque */
 }
+

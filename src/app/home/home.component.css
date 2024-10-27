@@ -24,78 +24,11 @@
   margin-bottom: -20px;
 }
 
-/* Estilos para o modal */
-.modal {
-  display: none; /* Inicialmente escondido */
-  position: fixed;
-  z-index: 100; /* Garantir que fique sobre outros elementos */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
-  justify-content: center;
-  align-items: center;
-}
-
-/* Quando o modal estiver ativo */
-.show-modal {
-  display: flex; /* Exibir o modal e centralizar conteúdo */
-  margin-top: 2rem;
-}
-
-/* Conteúdo do modal */
-.modal-content {
-  position: relative;
-  max-width: 1000px;
-  max-height: 1000px;
-  width: 100%;
-  height: auto;
-  background-color: rgba(97, 97, 97, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Botão para fechar o modal */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 22px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #212121;
-  cursor: pointer;
-  z-index: 100;
-}
-
-/* Estilo da imagem no modal */
-.modal-img {
-  max-width: 100%;
-  max-height: 100%;
-  /* width: auto;
-  height: auto; */
-  object-fit: contain; /* Garante que a imagem se ajuste corretamente sem distorcer */
-}
-
 /* Cards ajustáveis */
 .card {
-  /* width: 300px; */
   max-width: 250px;
   margin: 10px auto;
   margin: 10px auto;
 }
 
-/* Ajustes de responsividade para telas pequenas */
-@media (max-width: 768px) {
-  .row {
-      flex-direction: column;
-  }
 
-  .col {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-}

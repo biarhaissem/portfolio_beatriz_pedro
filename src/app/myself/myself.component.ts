@@ -16,7 +16,7 @@ export class MyselfComponent implements OnInit {
     {
       title: 'CONCEPTIONS',
       // description: '5 Planos de Garrett, 10 Heurísticas de Nielsen, Honeycomb, Gestalt.',
-      image: 'assets/images/Conceptions.png'
+      image: 'assets/images/conceptions.png'
     },
     {
       title: 'WEB DESIGN',

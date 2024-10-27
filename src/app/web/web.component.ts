@@ -11,7 +11,7 @@ export class WebComponent implements OnInit {
     {
       title: 'Wireframe',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
-      image: 'assets/images/2.png',
+      image: 'assets/images/wirecup.png',
     },
     {
       title: 'Website Wix',

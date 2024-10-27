@@ -11,17 +11,17 @@ export class MobileComponent implements OnInit {
     {
       title: 'UX Research',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
-      image: 'assets/images/4.png',
+      image: 'assets/images/reuniao.png',
     },
     {
       title: 'Wireframe',
       // description: 'Benchmarking, HTML5, Ferramentas NoCode',
-      image: 'assets/images/3.png',
+      image: 'assets/images/wirereis.png',
     },
     {
       title: 'Fluxo do Usuário',
       // description: 'HTML, CSS, JavaScript e Bootstrap',
-      image: 'assets/images/1.png',
+      image: 'assets/images/fluxo.png',
       linkUrl: 'https://youtu.be/gSkR6ZjnTps?si=cq-6gNfQ-XfHjK4j'
     },
     {
