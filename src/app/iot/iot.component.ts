@@ -31,7 +31,7 @@ export class IotComponent implements OnInit {
     {
       title: 'Arquitetura',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/arqplant.png',
+      image: 'assets/images/arqplantpc.png',
     },
     {
       title: 'Protótipo PLANTECH',
@@ -77,7 +77,7 @@ export class IotComponent implements OnInit {
     {
       title: 'Arquitetura',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/arqsmart.png',
+      image: 'assets/images/arqsmarttab.png',
     },
     {
       title: 'Protótipo Smart Plant',

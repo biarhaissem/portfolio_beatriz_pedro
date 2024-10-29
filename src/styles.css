@@ -76,6 +76,7 @@ a {
   background: linear-gradient(to right, rgba(245, 245, 245, 0.8),rgb(97, 97, 97, 0.8));
   padding: 1.2rem;
   color: #212121;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h1.title {
