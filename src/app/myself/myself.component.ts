@@ -21,7 +21,7 @@ export class MyselfComponent implements OnInit {
     {
       title: 'WEB DESIGN',
       // description: 'HTML, CSS, JavaScript, TypeScript, Boostrap, PHP, Angular, Laravel.',
-      image: 'assets/images/cup4fotos.png'
+      image: 'assets/images/umabia.png'
     },
     {
       title: 'MOBILE DESIGN',

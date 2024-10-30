@@ -17,8 +17,8 @@
 .img-fluid {
   margin-top: -2rem;
   max-height: 90%;
-  max-width: 90%; /* Ajuste de acordo com o tamanho desejado */
-  padding: 1rem;
+  max-width: 90%;
+  /* padding: 1rem; */
   position:center;
   display:flex;
   margin-bottom: -20px;
@@ -26,9 +26,9 @@
 
 /* Cards ajustáveis */
 .card {
-  max-width: 250px;
-  margin: 10px auto;
-  margin: 10px auto;
+  width: 300px;
+  max-width: 200px;
+  margin: 20px auto;
 }
 
 

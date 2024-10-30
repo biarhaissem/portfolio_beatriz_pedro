@@ -28,7 +28,7 @@ export class WebComponent implements OnInit {
     {
       title: 'Website Angular',
       // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/cup3.png',
+      image: 'assets/images/cup4fotos.png',
       linkUrl: 'https://biarhaissem.github.io/cupcakepop_2024/home'
     },
     {

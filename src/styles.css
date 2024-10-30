@@ -117,12 +117,11 @@ h1, p {
 
 .btn-primary{
   text-decoration: none;
-  font-size:1.4rem;
   margin-bottom: 4rem;
   position: relative;
-  background-color: #212121;
+  /* background-color: #212121; */
   transition: color 0.3s;
-  border-color: #212121;
+  /* border-color: #212121; */
 
   &:hover {
     color: #616161;

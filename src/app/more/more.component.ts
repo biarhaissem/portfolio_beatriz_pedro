@@ -35,7 +35,7 @@ export class MoreComponent implements OnInit {
       title: 'Curriculum Vitae',
       // description: 'Python, C, Robotica, Arduino, ESP8266, ESP32, MySQL, PostgreSQL.',
       image: 'assets/images/curriculumpic.png',
-      linkUrl: 'https://drive.google.com/file/d/16eZh2X92zx-gRS3E9fKn3dj1RdXrdCob/view?usp=sharing'
+      linkUrl: 'https://drive.google.com/file/d/1muG46WHndrILV00Yh_30xSjDjJHsObbI/view?usp=sharing'
     },
   ];
 
